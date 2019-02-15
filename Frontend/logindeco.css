@@ -1,3 +1,9 @@
+img
+{
+	margin-left: 47%;
+    margin-top: 10px;
+}
+
 .button-style
 {
 
@@ -22,11 +28,8 @@
 
 body{
 	background-color: #FFFFFF;
-	background-size: cover;
-	background-repeat: no-repeat;
+
 	margin-bottom: 15%;
-
-
 
 }
 
@@ -39,7 +42,9 @@ body{
     width: 350px;
     opacity: 0.9;
 }
-
+h4{
+	margin-left: 42%;
+}
 .my-navbar-right{
 
 	flex-direction: row-reverse;
@@ -49,6 +54,7 @@ body{
 	height: 50px;
 	position: fixed;
 	width: 100%;
+
 	bottom: 0;
 	text-align: center;
 	background-color:#191970;
