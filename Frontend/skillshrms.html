@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CYBER HRMS</title>
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link href="skills.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-sm ">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand"  href="#" ><img src="https://hrms.cygrp.com/content/images/logo.png" height="100" width="350"></a>
+			</div>
+			<ul class="nav navbar-nav navbar-right">
+				<li class="active"><button class="btn btn-outline-danger navbar-btn navigation-elements">CREATE</button>	</li>
+				</li>
+				<li><button class="btn btn-danger navbar-btn button-style">SKILLS</button></li>
+				<li><button class="btn btn-outline-danger navbar-btn navigation-elements">PROJECTS</button></li>
+				<li>
+					<button class="btn btn-outline-danger navbar-btn navigation-elements">LOGOUT</button>
+        		</li>
+				
+
+			</ul>
+			</div>
+
+		</nav>
+
+
+		<div>
+			
+
+			<button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#myModal">
+				ADD SKILL
+			</button>
+			 <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        
+        <div class="modal-header">
+          <h4 class="modal-title skill-heading">	SKILL SET ADDITION</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        
+        <div class="modal-body">
+        <input class="skill-addition" type="text" placeholder="Skill Name"> 
+        </div>
+        
+        
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">UPDATE</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+		</div>
+		for(i=0;i<data.length;i++)
+    $("<tr>
+    	<td><p id=\"skill-name\">"+data[i].Skills+"</p></td>
+    	<td><p id=\"EmployeeId\">"+data[i].Id+"</p></td>
+    	<td><p id=\"EmailId\">"+data[i].Email+"</p></td><td><p><input type=\"button\" value=\"EDIT\" onclick=openEdit(\""+data[i].Id+ "\")></p></td>
+
+    	<td><p><input type=\"button\" value=\"DELETE\" onclick=openEdit(\""+data[i].Id+ "\")></p></td>
+
+    </tr>").appendTo('#tb');
+
