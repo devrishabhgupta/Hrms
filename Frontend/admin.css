@@ -1,3 +1,5 @@
+/*STYLING FOR CURRENT PAGE BUTTON*/
+
 .button-style
 {
 
@@ -8,6 +10,8 @@
 
 
 }
+
+/*navigAION ELEMNETS MARGIN*/
 .navigation-elements{
 	margin-left: 10px;
 
@@ -22,14 +26,13 @@
 
 body{
 	background-color: #FFFFFF;
-	background-size: cover;
-	background-repeat: no-repeat;
+	
 	margin-bottom: 15%;
 
 
 
 }
-
+/*assigning usrname and pasword form styling*/
 .form-style{
 
 	margin-top: 4%;
@@ -44,7 +47,7 @@ body{
 
 	flex-direction: row-reverse;
 }
-
+/*footer styling*/
 .foot{
 	height: 50px;
 	position: fixed;
@@ -56,6 +59,8 @@ body{
 	font-weight: bold;
 	color:   #dc3545;
 }
+
+/*TO DISPLAY HAMBURGER BUTTON AS RED*/
 .navbar-toggler-icon{
 
 	background-color: #dc3545;
@@ -65,6 +70,9 @@ body{
 
 	background-color: #191970
 }
+
+
+/*SHOWING BUTTONS IN NAV WITHOUR BORDER IN SMALLER SCREENS*/
 @media screen and (max-width: 768px) {
 	.navigation-elements
 	{
