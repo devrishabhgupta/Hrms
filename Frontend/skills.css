@@ -1,0 +1,136 @@
+/*STLING ACTIVE PAGE'S BUTTON*/
+
+.button-style
+{
+
+	font-weight: bold;
+	border-radius: 5px;
+	margin-left: 14px;
+
+
+
+}
+
+
+/*navigAION ELEMNETS MARGIN*/
+.navigation-elements{
+	margin-left: 10px;
+
+	font-weight: bold;
+	border-radius: 5px;
+	
+}
+.btn-outline-danger:hover{
+	background-color:#d26431 
+}
+.btn-danger:hover{
+	background-color: #d26431;
+}
+
+
+.skill-heading
+{
+	font-size:20px;
+	font-weight: bold;
+	font-family: sans-serif;
+
+}
+body{
+
+	background-color: #f4f4f4;
+	 color:#006c96;
+
+}
+a{
+	color: #006c96;
+}
+.table-hover tbody tr:hover{
+background-color: #006c96;
+color:#FFFFFF;
+}
+.table-hover tbody tr:hover a{
+background-color: #006c96;
+color:#FFFFFF;
+}
+
+.foot{
+	height: 50px;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	text-align: center;
+	background-color:#FFFFFF;
+	font-size: 20px;
+	font-weight: bold;
+	color:#006c96;
+	border-top: 1px solid rgb(0,0,0,0.125);
+}
+/*DISPLAYING HAMBURGER AS RED*/
+.navbar-toggler-icon{
+
+	background-color: #006c96;
+}
+
+.navbar{
+
+	background-color: #FFFFFF;
+	border-bottom: 1px solid rgb(0,0,0,0.125);
+}
+.skill-addition{
+
+	width: 100%;
+}
+
+
+.table{
+	border: 2px solid #dee2e6;
+}
+
+/*table border*/
+
+table td, table th {
+  border: 1px  ;
+  padding: 15px;
+}
+.container{
+
+	max-width: 1080px;
+	background-color: #FFFFFF;
+	/*padding-bottom: 60px;*/
+}
+
+
+.card{
+	margin-bottom: 40px;
+}
+.btn-danger
+{
+	background-color: #d26431;
+}
+
+.button-hover:hover
+{
+
+	background-color: #ffffff;
+	color: #d26431;
+	font-weight: bold;
+}
+
+.pageno-bottom{
+
+	padding-top:20px;
+	padding-bottom: 20px;
+
+}
+/*to show buttons on nav bar without border in mobile view*/
+@media screen and (max-width: 768px) {
+	.navigation-elements
+	{
+		border: none;
+	}
+
+
+  
+}
+
+
