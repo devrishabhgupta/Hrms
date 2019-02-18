@@ -51,7 +51,7 @@ body{
 /*DISPLAYING HAMBURGER AS RED*/
 .navbar-toggler-icon{
 
-	background-color: #006c96;
+	background-color: #FFFFFF;
 }
 
 .navbar{
@@ -79,9 +79,9 @@ body{
 
   
 }
-@media screen and (min-width: 576px){
+@media screen and (min-width: 200px){
 .navbtns-inline {
   
-    width:600px;
+    width:1100px;
 }
 }

@@ -1,4 +1,4 @@
-img
+.login-image
 {
 	margin-left: 47%;
     margin-top: 10px;
@@ -21,29 +21,47 @@ img
 	border-radius: 5px;
 	
 }
+.btn-outline-danger:hover{
+	background-color:#d26431 
+}
+.btn-danger:hover{
+	background-color: #d26431;
+}
+.btn-danger
+{
+	background-color: #d26431;
+
+}
+
+.btn-outline-danger{
+	color:#006c96; 
+}
+
+
 
 
 
 
 
 body{
-	background-color: #FFFFFF;
-
+	background-color: #f4f4f4;
+	color: #006c96;
 	margin-bottom: 15%;
 
 }
 
+
 .form-style{
 
-	margin-top: 4%;
+	margin-top: 1%;
     margin-left: auto;
     margin-right: auto;
    
     width: 350px;
     opacity: 0.9;
 }
-h4{
-	margin-left: 42%;
+h5{
+	margin-left: 44%;
 }
 .my-navbar-right{
 
@@ -57,19 +75,27 @@ h4{
 
 	bottom: 0;
 	text-align: center;
-	background-color:#191970;
+	background-color:#FFFFFF;
 	font-size: 20px;
 	font-weight: bold;
-	color:   #dc3545;
+	color:   #006c96;
+	border-top: 1px solid rgb(0,0,0,0.125);
 }
 .navbar-toggler-icon{
 
-	background-color: #dc3545;
+	background-color: #FFFFFF;
+}
+.container{
+
+	max-width: 1080px;
+	background-color: #FFFFFF;
+	/*padding-bottom: 60px;*/
 }
 
 .navbar{
 
-	background-color: #191970
+	background-color: #FFFFFF;
+	border-bottom: 1px solid rgb(0,0,0,0.125);
 }
 @media screen and (max-width: 768px) {
 	.navigation-elements

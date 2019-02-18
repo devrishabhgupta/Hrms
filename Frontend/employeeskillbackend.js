@@ -3,6 +3,22 @@ function skilladdition(){
   var skillset=document.getElementById('skill').value;
   
   console.log(skillset);
+  var PostingData={
+           "Skill":skillset; 
+
+
+  }
+    $.ajax({
+        type: 'POST',
+        url: 'http://localhost:64490/api/Employees',
+        data:PostingData,  
+            success: function(data) {
+        alert("CONGRATS!SKILL ADDED!");
+        
+      }
+    });
+  }
+
   
   /*var data = {
 
@@ -26,40 +42,21 @@ function skilladdition(){
     },
 
   }*/
-  var PostingData={
-           "Skill":skillset; 
-
-
-  }
-    $.ajax({
-        type: 'POST',
-        url: 'http://localhost:64490/api/Employees',
-        data:PostingData,  
-            success: function(data) {
-        alert("CONGRATS!SKILL ADDED!");
-        
-      }
-    });
-  }
-
-  function authorization()
-  {
-
- var Uname=document.getElementById('username').value;
-
- var Pname=document.getElementById('password').value;
+  function AdminAssignUsername(){
+     var user=document.getElementById('username').value;
+     var pass=document.getElementById('password').value;
   
-  console.log(skillset);
+  console.log(user);
+  console.log(pass);
+  var assignData={
+           "Username":user; 
+            "Password":pass;
 
-   var AuthorizationData={
-           "Password":Pname; 
-
-
-  }
+ }
     $.ajax({
         type: 'POST',
         url: 'http://localhost:64490/api/Employees',
-        data:AuthorizationData,  
+        data:assignData,  
             success: function(data) {
         alert("CREDENTIALS ASSIGNED!");
         
@@ -68,3 +65,28 @@ function skilladdition(){
 
 
   }
+
+
+  function deleteSkills(){
+  
+
+var idgetting=localStorage.getItem("id");
+//"id"=idgetting;
+
+if(confirm("ARE YOU SURE?")){
+    $.ajax({
+    url: 'http://localhost:64490/api/Employees/' + idgetting,
+    type: 'DELETE',
+    // data:DeletingSingleData,
+    
+
+    success: function(data) {
+        alert("SKILL DELETED SUCCESSFULLY");
+       
+    }
+  
+});}
+    else{
+      alert("SKILL EXISTS");
+    }
+}
