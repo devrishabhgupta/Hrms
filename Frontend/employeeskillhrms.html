@@ -26,6 +26,36 @@
 
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link href="employeeskillstyle.css" rel="stylesheet">
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>    
+        <script>
+            $(document).ready(function() {
+                $('.js-example-basic-multiple').select2({
+                    ajax: {
+                        url: 'http://localhost:8081/skills/search',
+                        data: function (params) {
+                            var query = {
+                                search: params.term,
+                                page: params.page
+                            }
+
+                            // Query parameters will be ?search=[term]&page=[page]
+                            return query;
+                        }
+                    }
+                });
+
+                $('#get-sel').click(function(){
+                    console.log($('#mySelect2').select2('data'));
+                })            
+
+            });
+        </script>
+        <style>
+            .select-wrap{
+                width: 50%;
+            }
+        </style>
 
 
 </head>
@@ -116,22 +146,16 @@
 
   <h2>SELECT SKILLS<br><br></h2>
   
-  <div id="multi-selection">
-    <select id="multi-select">
-      <optgroup class="multiple-col" data='skills'>
-        <option id="1">Web Development</option>
-        <option id="2">Android App</option>
-        <option id="3">Cloud Computing</option>
-        <option id="4">PYTHON</option>
-        <option id="5">MONGO-DB</option>
-        <option id="6">A.I.</option>
-        > 
-      </optgroup>
-    </select>
-  </div>
+   <div class="">
+            <select id="mySelect2" class="js-example-basic-multiple select-wrap" name="states[]" multiple="multiple">
+                <option value="AL">Alabama</option>
+                <option value="WY">Wyoming</option>
+            </select>
+        </div>
 </div></div>
 </div>
 </div>
+    </div>
 </body>
     <footer class="foot">CYBER GROUP DEVELOPMENT
                     </footer>
