@@ -1,7 +1,9 @@
 var employee = require('./employee')
+var skill = require('./skill')
 
 module.exports = {
 
-   employee: employee
+   employee: employee,
+   skill: skill
 
 };
