@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CYBER HRMS</title>
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+
+  
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link href="skills.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-sm ">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand"  href="#" ><img src="https://hrms.cygrp.com/content/images/logo.png" height="40" width="120"> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+      </div>
+
+      <!-- buttons on right-->
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><button class="btn btn-outline-danger navbar-btn navigation-elements">CREATE</button>  </li>
+        
+        <li><button class="btn btn-danger navbar-btn button-style">SKILLS</button></li>
+        <li><button class="btn btn-outline-danger navbar-btn navigation-elements">PROJECTS</button></li>
+        <li>
+          <button class="btn btn-outline-danger navbar-btn navigation-elements">LOGOUT</button>
+            </li>
+        
+
+      </ul>
+      </div>
+
+    </nav>
+
+  <div class="container-fluid container">
+  
+  <!-- header,navigation-->
+
+
+	
+
+
+		<div> <div class=" text-center">
+                              <div class="container-fluid">
+                                <div class="card-body">
+
+                                    <!-- add new skill-->
+                                  <button type="button" class="btn btn-danger button-hover" data-toggle="modal" data-target="#myModal">Got New Skills?</button>
+			
+
+			</div></div></div>
+
+      <!-- modal to be opened on clicking got new skills?-->
+			 <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        
+        <div class="modal-header">
+          <h4 class="modal-title skill-heading">	SKILL SET ADDITION</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        
+        <div class="modal-body">
+        <input class="skill-addition" type="text" placeholder="Skill Name"> 
+        </div>
+        
+        
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">UPDATE</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+		</div>
+<table class="table table-striped table-hover" cellspacing="3px">
+    <tr>
+    <th id="serial"><b>SKILL</b> </th>
+    <th></thead>UPDATE</th>
+    <th>DELETE</th>
+    </tr>
+
+
+    <tr>
+    <td  id="serial"><b>WEB DESIGNING</b> </td>
+    <td><a href="#">EDIT</a></td>
+    <td><a href="#">REMOVE</a></td>
+    </tr>
+
+    <tr>
+    <td  id="serial"><b>CLOUD COMPUTING</b> </td>
+    <td><a href="#">EDIT</a></td>
+    <td><a href="#">REMOVE</a></td>
+    </tr>
+
+    <tr>
+    <td  id="serial"><b>MONGO DB</b> </td>
+    <td><a href="#">EDIT</a></td>
+    <td><a href="#">REMOVE</a></td>
+    </tr>
+
+    <tr>
+    <td  id="serial"><b>ANDROID APP</b> </td>
+    <td><a href="#">EDIT</a></td>
+    <td><a href="#">REMOVE</a></td>
+    </tr>
+  </table>
+
+<!-- to go to next page(in case of more records) -->
+<div class="pageno-bottom">
+    <nav aria-label="...">
+  <ul class="pagination justify-content-center">
+    <li class="page-item disabled">
+      <a class="page-link" href="#" tabindex="-1">Previous</a>
+    </li>
+    <li class="page-item active"><a class="page-link" href="#">1
+    <span class="sr-only"></span>
+  </a></li>
+    <li class="page-item disabled">
+      <a class="page-link" href="#">2 </a>
+    </li>
+    
+    <li class="page-item disabled">
+      <a class="page-link" href="#">Next</a>
+    </li>
+  </ul>
+</nav>
+</div>
+</div>
+
+ </body>
+
+<footer class="foot">CYBER GROUP DEVELOPMENT
+                    </footer>
+                 
+
+		<script>
+
+			/*$.ajax({
+      type: 'GET',
+      url: 'http://localhost:64490/api/Employees',
+      success: function(data) {
+        valuestore = data;
+        // console.log(data);
+        addRows(data)
+      }
+    });
+
+
+                function addRows(data){
+
+		for(i=0;i<data.length;i++)
+    $("<tr><td><p id=\"skill-name\">"+data[i].Skills+"</p></td><td><p><input type=\"button\" value=\"EDIT\" onclick=openEdit(\""+data[i].Id+ "\")></p></td><td><p><input type=\"button\" value=\"DELETE\" onclick=openEdit(\""+data[i].Id+ "\")></p></td></tr>").appendTo('#tb');*/
+
+</script>
+
+</html>
+

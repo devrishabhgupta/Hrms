@@ -1,0 +1,71 @@
+.button-style
+{
+
+	font-weight: bold;
+	border-radius: 5px;
+	margin-left: 14px;
+
+
+
+}
+.navigation-elements{
+	margin-left: 10px;
+
+	font-weight: bold;
+	border-radius: 5px;
+	
+}
+
+.well-lg { margin-left:100px;
+
+               margin-right:100px;
+               background-color: lavender;
+
+              }
+header  { background-color: darkblue;
+
+              color: white;
+        
+      padding: 15px;
+        
+    }
+footer  { background-color: darkblue;
+
+              color: white;
+        
+      padding: 15px;
+        
+    }
+
+
+body{
+	margin-bottom: 15%;
+}
+
+.form-style{
+
+	margin-top: 4%;
+    margin-left: auto;
+    margin-right: auto;
+   
+    width: 350px;
+    opacity: 0.9;
+}
+
+.my-navbar-right{
+
+	flex-direction: row-reverse;
+}
+
+@media only screen and (min-width: 768px)
+ {
+ .table 
+      {
+ height: auto;  
+        padding: 15px;
+ 
+      }
+  
+    .row.content {height:auto;} 
+ 
+  }
