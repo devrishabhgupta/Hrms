@@ -10,6 +10,11 @@
 
 
 }
+.my-navbar-right{
+
+	flex-direction: row-reverse;
+}
+
 
 
 /*navigAION ELEMNETS MARGIN*/
@@ -19,6 +24,9 @@
 	font-weight: bold;
 	border-radius: 5px;
 	
+}
+.btn-outline-danger{
+	color:#006c96; 
 }
 .btn-outline-danger:hover{
 	background-color:#d26431 
@@ -68,7 +76,7 @@ color:#FFFFFF;
 /*DISPLAYING HAMBURGER AS RED*/
 .navbar-toggler-icon{
 
-	background-color: #006c96;
+	background-color: #FFFFFF;
 }
 
 .navbar{
@@ -131,6 +139,12 @@ table td, table th {
 
 
   
+}
+@media screen and (min-width: 576px){
+.navbtns-inline {
+  
+    width:1100px;
+}
 }
 
 

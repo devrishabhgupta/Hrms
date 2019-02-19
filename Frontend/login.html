@@ -8,6 +8,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="loginbackend.js"></script>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link href="logindeco.css" rel="stylesheet">
 
@@ -18,8 +19,8 @@
 		<div class="container-fluid">
 			<div class="navbar-header">
 				<a class="navbar-brand"  href="#" ><img src="https://hrms.cygrp.com/content/images/logo.png" width="120" height="40"></a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" >
+    <span class="navbar-toggler-icon"><img src="menu-alt-512.png" height="30px" width="30px"></span>
   </button>
 			</div>
 			<div class="collapse navbar-collapse my-navbar-right" id="navbarNav">
@@ -37,10 +38,10 @@
 		</nav>
 
 		<figure class="welcome-figure">
-    <img src="https://resources.lookback.io/images/name-badge.svg" alt="welcome">
+    <img class="login-image" src="https://resources.lookback.io/images/name-badge.svg" alt="welcome">
   </figure>
 
-  <h4>LET'S GET STARTED</h4>
+  <h5>LET'S GET STARTED</h6>
                                 
                                     <div >
                             <div class="card bg-light text-center card-form form-style">
@@ -50,15 +51,15 @@
 
                                     <form>
                                         <div class="form-group">
-                                            <input type="text" class="form-control form-control-lg mt-5" placeholder="Username">
+                                            <input type="text" class="form-control form-control-lg mt-5" placeholder="Username" id="username">
                                         </div>
 
                                         <div class="form-group">
-                                            <input type="password" class="form-control form-control-lg mt-4" placeholder="Password">
+                                            <input type="password" class="form-control form-control-lg mt-4" placeholder="Password" id="password">
                                         </div>
 
 
-                                        <input type="submit" value="Submit" class="btn btn-outline-danger btn-lg mt-4">
+                                        <input type="submit" value="Submit" class="btn btn-outline-danger btn-lg mt-4" onclick="LoginAuthorization()">
                                        
                                     </form>
                                 </div>

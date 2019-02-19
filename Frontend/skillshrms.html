@@ -5,7 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
 
   
-
+<script type="text/javascript" src="employeeskillbackend.js"></script>
 
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
@@ -32,11 +32,13 @@
       <div class="navbar-header">
         <a class="navbar-brand"  href="#" ><img src="https://hrms.cygrp.com/content/images/logo.png" height="40" width="120"> </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+    <span class="navbar-toggler-icon"><img src="menu-alt-512.png" height="30px" width="30px"></span>
   </button>
       </div>
+    </div>
 
       <!-- buttons on right-->
+      <div class="collapse navbar-collapse my-navbar-right navbtns-inline" id="navbarNav">
       <ul class="nav navbar-nav navbar-right">
         <li class="active"><button class="btn btn-outline-danger navbar-btn navigation-elements">CREATE</button>  </li>
         
@@ -49,7 +51,7 @@
 
       </ul>
       </div>
-
+</div>
     </nav>
 
   <div class="container-fluid container">
@@ -89,7 +91,7 @@
         
         <div class="modal-footer">
           <button type="button" class="btn btn-danger" data-dismiss="modal">UPDATE</button>
-        </div>
+        <span id="skill" ></span></div>
         
       </div>
     </div>
@@ -107,25 +109,25 @@
     <tr>
     <td  id="serial"><b>WEB DESIGNING</b> </td>
     <td><a href="#">EDIT</a></td>
-    <td><a href="#">REMOVE</a></td>
+    <td><a href="#" onclick="deleteSkills()">REMOVE</a></td>
     </tr>
 
     <tr>
     <td  id="serial"><b>CLOUD COMPUTING</b> </td>
     <td><a href="#">EDIT</a></td>
-    <td><a href="#">REMOVE</a></td>
+    <td><a href="#" onclick="deleteSkills()">REMOVE</a></td>
     </tr>
 
     <tr>
     <td  id="serial"><b>MONGO DB</b> </td>
     <td><a href="#">EDIT</a></td>
-    <td><a href="#">REMOVE</a></td>
+    <td><a href="#" onclick="deleteSkills()">REMOVE</a></td>
     </tr>
 
     <tr>
     <td  id="serial"><b>ANDROID APP</b> </td>
     <td><a href="#">EDIT</a></td>
-    <td><a href="#">REMOVE</a></td>
+    <td><a href="#" onclick="deleteSkills()">REMOVE</a></td>
     </tr>
   </table>
 

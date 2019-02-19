@@ -20,17 +20,17 @@
 			<div class="navbar-header">
 				<a class="navbar-brand"  href="#" ><img src="https://hrms.cygrp.com/content/images/logo.png" width="120" height="40"></a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+    <span class="navbar-toggler-icon"><img src="menu-alt-512.png" height="30px" width="30px"></span>
   </button>
 			</div>
 			<div class="collapse navbar-collapse my-navbar-right" id="navbarNav">
 			<ul class="nav navbar-nav navbar-right"><!-- TO GET BUTTONS ON RIGHT SIDE(logo still on left)-->
 				<li class="active"><button class="btn btn-danger navbar-btn button-style">CREATE</button>	</li>
 				</li>
-				<li><button class="btn btn-outline-danger navbar-btn navigation-elements">SKILLS</button></li>
+				<li><a href="skillshrms.html"><button class="btn btn-outline-danger navbar-btn navigation-elements" type="button" onclick="">SKILLS</button></a></li>
 				<li><button class="btn btn-outline-danger navbar-btn navigation-elements">PROJECTS</button></li>
 				<li>
-					<button class="btn btn-outline-danger navbar-btn navigation-elements">LOGOUT</button>
+					<button class="btn btn-outline-danger navbar-btn navigation-elements" onclick="www.cygrp.com">LOGOUT</button>
         		</li>
 				
 
@@ -49,15 +49,15 @@
 
                                     <form>
                                         <div class="form-group">
-                                            <input type="text" class="form-control form-control-lg mt-5" placeholder="Assign Username">
+                                            <input type="text" class="form-control form-control-lg mt-5" placeholder="Assign Username"><span id="username" ></span>
                                         </div>
 
                                         <div class="form-group">
-                                            <input type="password" class="form-control form-control-lg mt-4" placeholder="Assign Password">
+                                            <input type="password" class="form-control form-control-lg mt-4" placeholder="Assign Password"><span id="password" ></span>
                                         </div>
 
 
-                                        <input type="submit" value="Submit" class="btn btn-outline-danger btn-lg mt-4">
+                                        <input type="submit" value="Submit" class="btn btn-outline-danger btn-lg mt-4" onclick()="AdminAssignUsername">
                                        
                                     </form>
                                 </div>
