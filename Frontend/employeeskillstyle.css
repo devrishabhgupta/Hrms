@@ -3,85 +3,85 @@
 .button-style
 {
 
-	font-weight: bold;
-	border-radius: 5px;
-	margin-left: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-left: 14px;
 
 
 
 }
 .my-navbar-right{
 
-	flex-direction: row-reverse;
+    flex-direction: row-reverse;
 }
 
 
 /*navigAION ELEMNETS MARGIN*/
 .navigation-elements{
-	margin-left: 10px;
+    margin-left: 10px;
 
-	font-weight: bold;
-	border-radius: 5px;
-	
+    font-weight: bold;
+    border-radius: 5px;
+
 }
 .btn-outline-danger:hover{
-	background-color:#d26431 
+    background-color:#d26431 
 }
 .btn-danger:hover{
-	background-color: #d26431;
+    background-color: #d26431;
 }
 body{
 
-	background-color: #f4f4f4;
-	 color:#006c96;
-	}
+    background-color: #f4f4f4;
+    color:#006c96;
+}
 
-	.foot{
-	height: 50px;
-	position: fixed;
-	width: 100%;
-	bottom: 0;
-	text-align: center;
-	background-color:#FFFFFF;
-	font-size: 20px;
-	font-weight: bold;
-	color:#006c96;
-	border-top: 1px solid rgb(0,0,0,0.125);
+.foot{
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    background-color:#FFFFFF;
+    font-size: 20px;
+    font-weight: bold;
+    color:#006c96;
+    border-top: 1px solid rgb(0,0,0,0.125);
 }
 /*DISPLAYING HAMBURGER AS RED*/
 .navbar-toggler-icon{
 
-	background-color: #FFFFFF;
+    background-color: #FFFFFF;
 }
 
 .navbar{
 
-	background-color: #FFFFFF;
-	border-bottom: 1px solid rgb(0,0,0,0.125);
+    background-color: #FFFFFF;
+    border-bottom: 1px solid rgb(0,0,0,0.125);
 }
 .pageno-bottom{
 
-	padding-top:20px;
-	padding-bottom: 20px;
+    padding-top:20px;
+    padding-bottom: 20px;
 
 }
 .btn-danger
 {
-	background-color: #d26431;
+    background-color: #d26431;
 }
 /*to show buttons on nav bar without border in mobile view*/
 @media screen and (max-width: 768px) {
-	.navigation-elements
-	{
-		border: none;
-	}
+    .navigation-elements
+    {
+        border: none;
+    }
 
 
-  
+
 }
 @media screen and (min-width: 200px){
-.navbtns-inline {
-  
-    width:1100px;
-}
+    .navbtns-inline {
+
+        width:1100px;
+    }
 }

@@ -8,6 +8,7 @@ var routes = require('./app/routes');
 
 var app = express();
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended:true}));
 
 var port = process.env.PORT || 8081;
 app.use(function(req, res, next) {

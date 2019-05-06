@@ -106,21 +106,7 @@ crossorigin="anonymous"></script>
                     <div class="row">
 
                         <div class="col-md-4 col-sm-12 col-xs-12">
-                            <div class="container-fluid">
-
-
-                                <img class="img-responsive" src="identity.jpg" alt="Passport size picture" height="200px"  
-                                     width="200px">
-
-                                <div class=" text-center">
-                                    <div class="container-fluid">
-                                        <div class="card-body">
-                                            <button type="button" class="btn btn-danger button-hover" data-toggle="modal" data-target="#myModal">UPLOAD PICTURE</button>
-
-                                        </div>
-                                    </div>
-                                </div>
-
+                            
                                 <div class="modal fade" id="myModal">
                                     <div class="modal-dialog">
                                         <div class="modal-content">
@@ -147,11 +133,11 @@ crossorigin="anonymous"></script>
                             </div>
 
                         </div>
-
+                        <div class="row">
                         <div class="col-md-4 col-sm-12 col-xs-12">
                             <div class="container-fluid">
 
-                                <h2>SELECT SKILLS <span id="cgi-txt"></span><br><br></h2>
+                                <h2>SELECT SKILLS<br><br></h2>
 
                                 <div class="">
                                     <select id="mySelect2" class="js-example-basic-multiple select-wrap" name="states[]" multiple="multiple">
@@ -159,9 +145,12 @@ crossorigin="anonymous"></script>
                                         <option value="WY">Wyoming</option>
                                     </select>
                                 </div>
-                                <button id="save-skills" class="btn btn-danger" style="margin-top: 10px">Update</button>
+                                <button id="get-employees" class="btn btn-danger" style="margin-top: 10px">Get Employees</button>
                             </div>
                         </div>
+                        <div class="col-md-4">
+                    <table id="example" class="display" width="100%"></table>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -169,12 +158,10 @@ crossorigin="anonymous"></script>
         </div>
         <script>
             $(document).ready(function(){
-            var cgiCode = 'INT002';    
-                $('#cgi-txt').text(cgiCode);
-            var studentSelect = $('#mySelect2');
+            /*var studentSelect = $('#mySelect2');
             $.ajax({
                 type: 'GET',
-                url: 'http://localhost:8081/employees/'+ cgiCode +'/skills',
+                url: 'http://localhost:8081/employees/INT000/skills',
                 success:function (data) {
                 // create the option and append to Select2
                 for(var i = 0;i<data.length;i++){
@@ -189,20 +176,32 @@ crossorigin="anonymous"></script>
                             data: data[i]
                         }
                     });
-                }}});
+                }}});*/
 
-            $('#save-skills').on('click',function(){
-                console.log('in save skills');
+            $('#get-employees').on('click',function(){
+                console.log('in get employees');
                 var data1 = $('#mySelect2').val();   
                 console.log(data1);
                 $.ajax({
                     type: 'POST',
-                    url: 'http://localhost:8081/employees/' + cgiCode + '/skills',
+                    url: 'http://localhost:8081/employees/skills/find',
                     data : {"skills" : data1
                            },
                     success:function(data){
-                        alert('Update Successfull');
+                        alert('Successfull');
                         console.log(data);
+                        dataSet = data.map((x)=>{
+                            return [x.name,x.cgiCode,x.emailId,x.skills.map((x) => x.name).join(' ')]
+                        })
+                           $('#example').DataTable( {
+        data: dataSet,
+        columns: [
+            { title: "Name" },
+            { title: "CGICODE" },
+            { title: "Email" },
+            { title: "Skills" }
+        ]
+    } );
                     }
                 });
             });

@@ -16,7 +16,7 @@ var skill = {
     },
     'searchSkills' : (req,res) => {
 
-        var limitNum = 1;
+        var limitNum = 3;
         var search = String(req.query.search);
         // console.log(search);
         var pageNum = Number(req.query.page);

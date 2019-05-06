@@ -4,7 +4,9 @@ Schema = mongoose.Schema,
 SkillSchema = new Schema({
     name: {
         type: String,
-        required:true
+        required:true,
+        unique:true,
+        lowercase:true
     },
 
     employees : [{ type: Schema.Types.ObjectId, ref: 'Employee' }]
